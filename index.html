@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="maindiv">
+        <div class="xbtn">
+            <img src="pngwing.com (10).png" alt="img" onclick="xopen()" class="colorimg" id="xopen">
+            <img src="pngwing.com (10).png" alt="img" onclick="xclose()" class="colorimg" id="xclose">
+        </div>
+        <div class="bgcolor">
+            <p>background color</p>
+            <div class="color" id="color1" onclick="color1()" onmouseenter="mouseIn1()" onmouseleave="mouseOut1()"></div>
+            <div class="color" id="color2" onclick="color2()" onmouseenter="mouseIn2()" onmouseleave="mouseOut2()"></div>
+            <div class="color" id="color3" onclick="color3()" onmouseenter="mouseIn3()" onmouseleave="mouseOut3()"></div>
+            <div class="color" id="color4" onclick="color4()" onmouseenter="mouseIn4()" onmouseleave="mouseOut4()"></div>
+        </div>
+        <div class="inputdiv">
+            <div class="input_btn">
+                <div>
+                    <input type="text" class="input" placeholder="Enter city name..." required>
+                    <ul class="suggestions"></ul>
+                </div>
+                
+                <span class="btn"><img src="pngwing.com (2).png" alt="img" class="btnimg"></span>
+            </div>
+            <div class="imgdiv">
+                <img src="pngwing.com (5).png" alt="img" class="image">
+                
+                
+                <p class="status">status : null</p>
+                <div class="tempdiv">
+                    <p class="city">city name</p><span class="temp"></span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="details">
+            <div class="det"> 
+                <img src="pngwing.com (3).png" alt="img">
+                <p class="humidity">null</p>
+            </div>
+            <div class="det"> 
+                <img src="atmospheric-conditions.png" alt="img">
+                <p class="feels_like">null</p>
+            </div>
+            <div class="det"> 
+                <img src="level.png" alt="img">
+                <p class="grnd_level">null</p>
+            </div>
+            <div class="det"> 
+                <img src="pressure-gauge.png" alt="img">
+                <p class="pressure">null</p>
+            </div>
+            <div class="det"> 
+                <img src="sea-level.png" alt="img">
+                <p class="sea_level">null</p>
+            </div>
+            <div class="det"> 
+                <img src="hot.png" alt="img">
+                <p class="temp_max">null</p>
+            </div>
+            <div class="det"> 
+                <img src="temperature.png" alt="img">
+                <p class="temp_min">null</p>
+            </div>
+            <div class="det"> 
+                <img src="storm.png" alt="img">
+                <p class="wind">null</p>
+            </div>
+            <div class="det"> 
+                <img src="360-degrees.png" alt="img">
+                <p class="deg">null</p>
+            </div>
+            <div class="det"> 
+                <img src="strength.png" alt="img">
+                <p class="gust">null</p>
+            </div>
+            <div class="det"> 
+                <img src="timezone.png" alt="img">
+                <p class="timezone">null</p>
+            </div>
+            <div class="det"> 
+                <img src="user.png" alt="img">
+                <p class="visibility">null</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
