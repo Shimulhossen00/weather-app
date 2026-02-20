@@ -100,7 +100,7 @@ var btn = document.querySelector(".btn");
 
 //rajshahi
 async function weatherapp(cityname) {
-    let url = `http://localhost:3000/weather?city=${cityname}`;
+    let url = `/weather?city=${cityname}`;
     const respone = await fetch(url);
     const data = await respone.json();
     

@@ -4,7 +4,9 @@ const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
+
 app.use(cors());
+app.use(express.static("public")); 
 
 app.get("/weather", async (req, res) => {
     const city = req.query.city;
@@ -16,12 +18,15 @@ app.get("/weather", async (req, res) => {
         const response = await fetch(
             `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`
         );
+
         const data = await response.json();
         res.json(data);
+
     } catch (error) {
         res.status(500).json({ error: "Server error" });
     }
 });
-console.log("API Key:", process.env.OPENWEATHER_API_KEY);
 
-app.listen(3000, () => console.log("Server running on port 3000"));
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
