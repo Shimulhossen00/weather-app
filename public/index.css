@@ -149,8 +149,11 @@ body{
     position: absolute;
     left: -25%;
     transition: .2s;
-   
+   display: none;
     
+}
+.xbtn{
+    display: none;
 }
 .bgcolor .color{
     
@@ -206,7 +209,7 @@ body{
         
     }
     .details .det{
-        width: 100%;
+        width: 90%;
     }
     
 }
@@ -257,3 +260,9 @@ body{
 .suggestions li:hover {
     background: #ddd;
 }
+.tempdiv {
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+}
+.
